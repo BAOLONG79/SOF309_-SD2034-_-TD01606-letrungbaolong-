@@ -11,7 +11,6 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <skipTests>true</skipTests>
   </properties>
 
   <dependencies>
@@ -51,10 +50,18 @@
             <version>0.4</version>
         </dependency>
 
-        <!-- JUnit 5 API (Phục vụ cho phần Test) -->
+        <!-- JUnit 5 API -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit 5 Params (Hỗ trợ @ParameterizedTest và @CsvSource) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
@@ -86,14 +93,11 @@
         <version>3.4.0</version>
       </plugin>
 
-      <!-- Plugin bỏ qua test để không bị lỗi biên dịch -->
+      <!-- Maven Surefire Plugin (Cho phép chạy Unit Test) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
       </plugin>
 
       <!-- Plugin chạy Tomcat nhúng -->
