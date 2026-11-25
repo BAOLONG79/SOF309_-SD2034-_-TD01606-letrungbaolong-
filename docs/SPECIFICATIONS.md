@@ -7,7 +7,10 @@
 * **Tên đề tài:** Website Quản lý Bán hàng CoffeePoly
 * **Công nghệ:** Java 17, Jakarta EE 10, Tomcat 10, SQL Server, Maven
 * **URL chạy local:** `http://localhost:8080/CoffeePoly/`
-
+Tài khoản (Email): admin@coffeepoly.com
+Mật khẩu: Admin@123
+Email / Tên đăng nhập: longltbtd001606@gmail.com
+mk:baolong12233445
 ## ## 2. QUY TẮC NGHIỆP VỤ (BUSINESS RULES)
 * **Chức năng Đăng ký (`/register`):** Form gồm `username` (3-20 ký tự, không dấu), `email`, `password` (tối thiểu 6 ký tự), `confirmPassword`.
 * **Chức năng Đăng nhập (`/login`):** Kiểm tra đúng tài khoản / mật khẩu $\rightarrow$ chuyển hướng về trang chủ; sai $\rightarrow$ báo lỗi.
